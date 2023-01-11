@@ -51,6 +51,10 @@ The pyspark for the process is found here :ETL_joining_data.py
 ![image](https://user-images.githubusercontent.com/54287482/211903698-233a734f-9bc1-4cd7-9fff-e1f0cd15f197.png)
 All databases
 
+
+
+![image](https://user-images.githubusercontent.com/54287482/211906073-a7a35bd4-8f9f-4c2d-97df-cb373d9ea273.png)
+All Tables
 8 - The Quicksight will establish connection with S3 bucket to retrieve the final dataset which can now be used for building dashboards out of it.
 
 ![image](https://user-images.githubusercontent.com/54287482/211897286-a7da7fe8-52ad-4d07-a566-04eb31d6d478.png)
