@@ -20,8 +20,9 @@ Project Steps
 1 -utilising AWS CLI commands to upload data from a local computer to an S3 bucket while striving to maintain file organisation. The JSON and CSV files each have their own folder.
 local_S3_cli_commands.sh
 
-2 - Data from raw bucket JSON and CSV files will be crawled and stored in a separate database using AWS Glue Catalog..
-3 - If JSON-formatted data causes issues, you should develop a Python function using AWS Lambda to clean them up and convert them to parquet format.
+2 - If JSON-formatted data causes issues, you should develop a Python function using AWS Lambda to clean them up and convert them to parquet format.
+3-Data from raw bucket JSON will be crawled from the cleaned Json dataset in S3 ,the json was cleaned using AWS Lambda and stored in a separate database using AWS Glue Catalog(crawler).
+
 lambda_function.py
 
 4 -The result was saved in a new database in Athena, and this Lambda function now has a trigger that will execute each time fresh data is added to the S3 bucket.
@@ -46,6 +47,9 @@ The ETL flow generates a pyspark programme to which adjustments can be made/adde
 The pyspark for the process is found here :ETL_joining_data.py
 
 
+
+![image](https://user-images.githubusercontent.com/54287482/211903698-233a734f-9bc1-4cd7-9fff-e1f0cd15f197.png)
+All databases
 
 8 - The Quicksight will establish connection with S3 bucket to retrieve the final dataset which can now be used for building dashboards out of it.
 
